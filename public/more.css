@@ -1,0 +1,221 @@
+*, *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #050505;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #090909;
+}
+
+a:hover {
+  color: #93867F;
+}
+
+
+/* typography */
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8475rem;
+  display: inline;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  line-height: 1.3;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+nav a{
+  color: #090909;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+nav a:hover,
+nav a:focus {
+  text-decoration-line: underline;
+}
+
+.date,
+nav a {
+  text-transform: uppercase;
+}
+
+.container p a {
+  text-decoration: none;
+  color: #F39C6B;
+}
+
+.container p a:hover,
+.container p a:focus{
+  color: #93867F;
+}
+
+footer {
+  font-size: .75rem;
+}
+
+/* layout */
+
+.blog-title {
+  color: #141414;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;;
+}
+
+.hero-img {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(images/article-image-hero.png);
+  border-radius: 3px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  width: 100%;
+  min-height: 200px;
+  background-size: cover;
+  max-width: 900px;
+  margin: 0;
+}
+
+.hero-img,
+section article {
+  margin: 0 auto;
+}
+
+section article {
+  max-width: 800px;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.border {
+  border: 1px solid #202020;
+}
+
+nav ul,
+.header {
+  display: flex;
+}
+
+header {
+  padding: 1em;
+  margin-bottom: 2.125em;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+nav ul {
+  gap: 2em;
+  margin: 0;
+}
+
+
+section h3,
+footer {
+  text-align: center;
+}
+
+footer {
+  background: #202020;
+  padding: 2em;
+}
+
+footer p {
+  font-weight: 400;
+  color: #d7d7d7;
+  margin-top: .5em;
+}
+
+footer h4 {
+  color: #ececec;
+  margin-bottom: 0;
+}
+
+.fa-brands,
+.fa-envelope {
+  color: #d7d7d7;
+  font-size: 2rem;
+  margin-left: 1em;
+  margin-top: .8em;
+}
+
+.fa-brands:hover,
+.fa-envelope:hover {
+  color: #93867F;
+}
+
+
+@media (min-width: 768px) {
+
+  /* typography */
+  body {
+    font-size: 1.05rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  h1,
+  .fa-blog {
+    font-size: 1.2525rem;
+  }
+
+  .blogs-container {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+    margin:2em;
+  }
+
+  .blogs-container h3 {
+    grid-column: 1 / -1;
+  }
+
+  .hero-img {
+    min-height: 500px;
+  }
+
+  .footer {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+  }
+
+  .icons h4 {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+
